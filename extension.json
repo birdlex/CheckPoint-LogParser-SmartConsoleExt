@@ -1,0 +1,46 @@
+{
+	"extension": {
+		"name": "Log Parser",
+		"product-url": "https://blog.birdlex.net",
+		"provider": "birdlex@birdlex.net",
+		"version": "1.0"
+	},
+	"custom-data": {
+		"log-parser-host": "127.0.0.1"
+	},
+	"locations": [
+	{
+		"location": "details-pane",
+		"relevant-types": ["access-policy"],
+		"ui-element": {
+			"type": "tab",
+			"caption": "Log Parser",
+			"action": {
+				"details-level": "full",
+				"method": "get",
+				"trigger-id": "details-pane",
+				"url": "index.html"
+			}
+		}
+	},{
+		"location": "toolbar",
+		"relevant-types": ["access-policy"],
+		"ui-element": {
+			"type": "menu",
+			"caption": "Log Parser",
+			"action": {
+					"browser-window": {
+						"height": "450",
+						"width": "900"
+					},
+					"details-level": "full",
+					"method": "get",
+					"trigger-id": "toolbar-get",
+					"url": "index.html"
+				}
+		}
+	}],
+	"requested-permissions": {
+		"client": ["get-read-only-session"]
+	}
+}

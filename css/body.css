@@ -1,0 +1,66 @@
+body {
+    background-color: #181924;
+    font-family: "MesloLGS NF";
+    font-size: 12px;
+  }
+  #info {
+    margin-right: 15px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    color: hsla(0, 0%, 100%, 0.6);
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .input-group>input.input-ttl {flex: 0 1 100px;}
+  .input-group>input.input-ip {flex: 0 1 160px;}
+  #tab-demo > ul {
+    display: block;
+    margin: 0;
+    list-style: none;
+  }
+  .tab-title {
+    list-style: none;
+  }
+  #tab-demo > ul > li:hover {
+    background-color: #911656;
+  }
+  #tab-demo > ul > li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 -1px -1px 0;
+    border: 1px solid #bcbcbc;
+    height: 25px;
+    line-height: 25px;
+    background: #22222b;
+    padding: 0 10px;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  #tab-demo > ul > li a {
+    color: #e4e4e5;
+    text-decoration: none;
+  }
+  #tab-demo > ul > li.active {
+    border-bottom: 1px solid #fff;
+    background: #4a4c5a;
+  }
+  #tab-demo > .tab-inner {
+    clear: both;
+    color: hsla(0, 0%, 100%, 0.6);
+    border: 1px #bcbcbc solid;
+  }
+  .tab-inner {
+    padding: 15px;
+    background-color: #24252f;
+  }
+  span.toggle-handle.btn.btn-default {
+    background-color: #adb5bd;
+  }
+  .view-received-syslog-table > td {
+    white-space: normal !important; 
+    word-wrap: break-word;  
+  }
+  .view-received-syslog-table {
+    table-layout: fixed;
+  }
